@@ -10,7 +10,7 @@ def reverse(x):
         result = int('-' + ''.join([str(t) for t in k]))
     else:
         result = int(''.join([str(t) for t in k]))
-    if -2**31<result<2**31-1:
+    if -2**31<=result<=2**31-1:
         return result
     return 0
 
